@@ -1,16 +1,22 @@
 #include <stdio.h>
 
-void main() {
-	char* text = "abc test 123";
-	puts(text);
+static char input[2048];
 
-	typedef struct {
-		float x;
-		float y;
-	} point;
+int main(int argc, char** argv) {
+    printf();
+    /* Print Version and Exit Information */
+    puts("Lispy Version 0.0.0.0.1");
+    puts("Press Ctrl+c to Exit\n");
 
-	point p;
-	p.x = 5.5;
-	p.y = 12;
-	return;
-};
+    while (1) {
+        fputs("Lisp but bad> ", stdout);
+        
+        // user string input, max chars to write, file stream to read from;
+        fgets(input, sizeof(input), stdin);
+
+        /* Echo input back to user */
+        printf("echo> %s", input);
+    }
+
+    return 0;
+}

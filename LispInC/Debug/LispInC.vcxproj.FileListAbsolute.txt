@@ -1,0 +1,2 @@
+C:\Users\Shmoozel\source\repos\C\LispInC\Debug\LispInC.exe
+C:\Users\Shmoozel\source\repos\C\LispInC\Debug\LispInC.pdb
