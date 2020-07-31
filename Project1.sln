@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project1", "Project1.vcxproj", "{424926CA-C198-4792-AD51-9E56A52F13F3}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LispInC", "..\LispInC\LispInC.vcxproj", "{444662AE-06AE-4F53-82B6-AE467D3FFF25}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{424926CA-C198-4792-AD51-9E56A52F13F3}.Release|x64.Build.0 = Release|x64
 		{424926CA-C198-4792-AD51-9E56A52F13F3}.Release|x86.ActiveCfg = Release|Win32
 		{424926CA-C198-4792-AD51-9E56A52F13F3}.Release|x86.Build.0 = Release|Win32
+		{444662AE-06AE-4F53-82B6-AE467D3FFF25}.Debug|x64.ActiveCfg = Debug|x64
+		{444662AE-06AE-4F53-82B6-AE467D3FFF25}.Debug|x64.Build.0 = Debug|x64
+		{444662AE-06AE-4F53-82B6-AE467D3FFF25}.Debug|x86.ActiveCfg = Debug|Win32
+		{444662AE-06AE-4F53-82B6-AE467D3FFF25}.Debug|x86.Build.0 = Debug|Win32
+		{444662AE-06AE-4F53-82B6-AE467D3FFF25}.Release|x64.ActiveCfg = Release|x64
+		{444662AE-06AE-4F53-82B6-AE467D3FFF25}.Release|x64.Build.0 = Release|x64
+		{444662AE-06AE-4F53-82B6-AE467D3FFF25}.Release|x86.ActiveCfg = Release|Win32
+		{444662AE-06AE-4F53-82B6-AE467D3FFF25}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

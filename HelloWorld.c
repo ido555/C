@@ -9,7 +9,7 @@
 #define ROWS_IN_2D_ARRAY(a2D)       ( sizeof( a2D       ) / sizeof( a2D[0]          )) // No. of Rows in a 2D array
 #define COLUMNS_IN_2D_ARRAY(a2D)    ( sizeof( a2D[0]    ) / sizeof( a2D[0][0]       )) // No. of Columns in a 2D array
 
-void main()
+void HelloWorld()
 {
     // imported boolean useage example
     bool isTrue = true;
