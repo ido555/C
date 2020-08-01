@@ -24,6 +24,7 @@
     <ProjectGuid>{444662ae-06ae-4f53-82b6-ae467d3fff25}</ProjectGuid>
     <RootNamespace>LispInC</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>proj2</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
