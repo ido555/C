@@ -7,6 +7,8 @@ int main(int argc, char *argv[])
     printf("you are %d kilometers away", distance);
 
     return 0;
+
+    // 
     /* GCC Arguments:
     https://gcc.gnu.org/onlinedocs/gcc
     -Wall 
