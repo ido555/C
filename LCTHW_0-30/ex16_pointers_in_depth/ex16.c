@@ -14,7 +14,7 @@ struct Person
 struct Person *Person_Create(char *name, int age, int height, int weight){
     // malloc - On success, returns the pointer to the beginning of newly allocated memory
     // On failure, returns a null pointer (IMPORTANT remember to catch with assert).
-    struct Person *person = malloc(sizeof(struct Person)); // assign memory block the size of name+age+height+weight
+    struct Person *person = malloc(sizeof(struct Person)); // assign memory block the size of name+age+height+weight+padding if needed ?
     // If TRUE, assert() does nothing
     // If FALSE, assert() displays an error message and aborts the program
 
@@ -40,6 +40,7 @@ struct Person *Person_Create(char *name, int age, int height, int weight){
 
 void Person_destroy(struct Person *person){
     assert(person != NULL);
+    // dont forget to free allocated memory to prevent a memory leak
 
     // delete assigned name memory block (memory address = *name) 
     free(person->name);
@@ -47,11 +48,11 @@ void Person_destroy(struct Person *person){
     free(person);
 }
 
-void Person_print(struct Person *who){
-    printf("Name: %s\n", who->name);
-    printf("\tAge: %d\n", who->age);
-    printf("\tHeight: %d\n", who->height);
-    printf("\tWeight: %d\n", who->weight);
+void Person_print(struct Person *person){
+    printf("Name: %s\n", person->name);
+    printf("\tAge: %d\n", person->age);
+    printf("\tHeight: %d\n", person->height);
+    printf("\tWeight: %d\n", person->weight);
 }
 
 int main(int argc, char *argv[])
@@ -77,7 +78,8 @@ int main(int argc, char *argv[])
     Person_print(frank);
 
 
-    // cleanup garbage (windows will do this automatically but this is good convention)
+    // cleanup garbage before end of program(windows will do this automatically but this is good convention)
+    // if this wasn't the end of program i would still need to do this to prevent a memory leak
     Person_destroy(joe);
     Person_destroy(frank);
     return 0;
